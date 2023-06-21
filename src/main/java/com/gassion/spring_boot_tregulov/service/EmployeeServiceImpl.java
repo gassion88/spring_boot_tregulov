@@ -19,12 +19,12 @@ public class EmployeeServiceImpl implements EmployeeService{
     }
 
     @Override
-    public List<Employee> getAllEmployee() {
+    public List<Employee> getAllEmployees() {
         return employeeDAO.getAllEmployee();
     }
 
     @Override
-    public Employee getEmployeeByID(int employeeID) {
+    public Employee getEmployeeById(int employeeID) {
         return employeeDAO.getEmployeeByID(employeeID);
     }
 
@@ -36,7 +36,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 
     @Override
     @Transactional
-    public void deleteEmployeeByID(int employeeID) {
+    public void deleteEmployeeById(int employeeID) {
         employeeDAO.deleteEmployeeID(employeeID);
     }
 }

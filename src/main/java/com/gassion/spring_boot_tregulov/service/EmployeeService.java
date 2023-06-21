@@ -5,8 +5,8 @@ import com.gassion.spring_boot_tregulov.entity.Employee;
 import java.util.List;
 
 public interface EmployeeService {
-    List<Employee> getAllEmployee();
-    Employee getEmployeeByID(int employeeID);
+    List<Employee> getAllEmployees();
+    Employee getEmployeeById(int employeeID);
     void saveEmployee(Employee employee);
-    void deleteEmployeeByID(int employeeID);
+    void deleteEmployeeById(int employeeID);
 }
