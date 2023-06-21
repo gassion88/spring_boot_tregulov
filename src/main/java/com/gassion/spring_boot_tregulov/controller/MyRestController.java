@@ -12,7 +12,6 @@ import java.util.List;
 @RequestMapping("/api")
 public class MyRestController {
 
-
     private final EmployeeService employeeService;
 
     @Autowired
@@ -48,7 +47,7 @@ public class MyRestController {
     @DeleteMapping("/employees/{id}")
     public String deleteEmployee(@PathVariable int id) {
         employeeService.deleteEmployeeById(id);
-        
+
         return "Employee with ID= " + id + " was deleted";
     }
 
