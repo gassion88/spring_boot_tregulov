@@ -9,7 +9,7 @@ public interface EmployeeDAO {
 
     Employee getEmployeeByID(int employeeID);
 
-    void saveEmployee(Employee employee);
+    void saveOrUpdateEmployee(Employee employee);
 
     void deleteEmployeeID(int employeeID);
 }

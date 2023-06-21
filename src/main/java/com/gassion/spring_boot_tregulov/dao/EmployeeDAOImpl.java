@@ -32,7 +32,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
     }
 
     @Override
-    public void saveEmployee(Employee employee) {
+    public void saveOrUpdateEmployee(Employee employee) {
         Session session = entityManager.unwrap(Session.class);
         session.saveOrUpdate(employee);
     }
